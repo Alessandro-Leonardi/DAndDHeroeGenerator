@@ -64,20 +64,72 @@ const RACES: Race[] = [
 ];
 
 const CLASSES: DndClass[] = [
-  {
-    name: "Guerreiro",
-    hitDie: 10,
-    primaryAbility: ["Força", "Destreza"],
-    description: "Mestres do combate marcial e das armas.",
-    combatRole: "Linha de frente, dano físico constante.",
-    outOfCombatRole: "Atleta e especialista em táticas.",
-    subclasses: [
-      { name: "Campeão", description: "Foco em acertos críticos.", synergy: "Sinergia pura com Força." },
-      { name: "Mestre de Batalha", description: "Usa manobras táticas.", synergy: "Bom com Inteligência ou Carisma secundário." },
-      { name: "Cavaleiro Psíquico", description: "Poderes mentais em combate.", synergy: "Requer Inteligência alta." },
-      { name: "Eldritch Knight", description: "Guerreiro com magias.", synergy: "Foco em Inteligência." }
-    ]
-  },
+{
+        name: "Guerreiro",
+        hitDie: 10,
+        primaryAbility: ["Força", "Destreza"],
+        description: "Mestres do combate marcial e das armas.",
+        combatRole: "Linha de frente, dano físico constante.",
+        outOfCombatRole: "Atleta e especialista em táticas.",
+        subclasses: [
+            { name: "Campeão", description: "Foco em acertos críticos.", synergy: "Sinergia pura com Força." },
+            { name: "Mestre de Batalha", description: "Usa manobras táticas.", synergy: "Bom com Inteligência ou Carisma secundário." },
+            { name: "Cavaleiro Psíquico", description: "Poderes mentais em combate.", synergy: "Requer Inteligência alta." },
+            { name: "Eldritch Knight", description: "Guerreiro com magias.", synergy: "Foco em Inteligência." }
+        ]
+    },
+    {
+        name: "Mago",
+        hitDie: 6,
+        primaryAbility: ["Inteligência"],
+        description: "Estudiosos das artes arcanas que manipulam a realidade.",
+        combatRole: "Dano em área e controle de campo.",
+        outOfCombatRole: "Especialista em conhecimento histórico e arcano.",
+        subclasses: [
+            { name: "Abjurador", description: "Mestre das proteções mágicas.", synergy: "Excelente para quem quer sobreviver." },
+            { name: "Evocador", description: "Poder destrutivo bruto e explosivo.", synergy: "Foco total em Inteligência e dano." },
+            { name: "Adivinho", description: "Manipula a sorte e vê o futuro.", synergy: "Estratégico para controlar rolagens de dados." }
+        ]
+    },
+    {
+        name: "Ladino",
+        hitDie: 8,
+        primaryAbility: ["Destreza"],
+        description: "Especialistas em furtividade, perícias e ataques precisos.",
+        combatRole: "Dano explosivo em alvo único e mobilidade.",
+        outOfCombatRole: "Infiltração, abrir fechaduras e desarmar armadilhas.",
+        subclasses: [
+            { name: "Assassino", description: "Letal contra alvos desprevenidos.", synergy: "Sinergia com alta Iniciativa." },
+            { name: "Ladrão", description: "Extrema agilidade manual.", synergy: "Interage com objetos como ação bônus." },
+            { name: "Trapaceiro Arcano", description: "Mistura ladinagem com ilusões.", synergy: "Requer Inteligência como atributo secundário." }
+        ]
+    },
+    {
+        name: "Clérigo",
+        hitDie: 8,
+        primaryAbility: ["Sabedoria"],
+        description: "Intermediários entre os deuses e os mortais.",
+        combatRole: "Suporte, cura e tanques secundários.",
+        outOfCombatRole: "Curandeiro e conselheiro espiritual.",
+        subclasses: [
+            { name: "Domínio da Vida", description: "Mestre absoluto da cura.", synergy: "Indispensável para a longevidade do grupo." },
+            { name: "Domínio da Guerra", description: "Lutador abençoado pela divindade.", synergy: "Sinergia com Força para ataques extras." },
+            { name: "Domínio da Luz", description: "Canaliza o poder do sol para incinerar inimigos.", synergy: "Sinergia com Sabedoria para magias de fogo." }
+        ]
+    },
+    {
+        name: "Paladino",
+        hitDie: 10,
+        primaryAbility: ["Força", "Carisma"],
+        description: "Guerreiros sagrados unidos por um juramento inquebrável.",
+        combatRole: "Tanque robusto com alto dano de impacto (Smite).",
+        outOfCombatRole: "Líder inspirador e diplomata.",
+        subclasses: [
+            { name: "Devoção", description: "O cavaleiro clássico da justiça.", synergy: "Equilibra perfeitamente Força e Carisma." },
+            { name: "Vingança", description: "Focado em caçar um único inimigo.", synergy: "Melhor para quem foca em dano puro." },
+            { name: "Anciões", description: "Defensor da natureza e da luz.", synergy: "Ganham defesas mágicas incríveis." }
+        ]
+    },
   // ... (As outras 11 classes seguiriam este padrão)
 ];
 
