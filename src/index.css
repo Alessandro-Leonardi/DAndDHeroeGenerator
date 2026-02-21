@@ -5,7 +5,7 @@
 @media print {
     @page {
         size: A4;
-        margin: 0mm; /**/
+        margin: 15mm; /**/
     }
 
     .print-container {
@@ -13,11 +13,6 @@
         transform-origin: top center; /* Escala a partir do topo central */
         /* width: 142.8%;  Compensação matemática: 100% / 0.7 */
         /* margin-left: -21.4%;  Centraliza o conteúdo após o aumento da largura */
-    }
-    html {
-        background-color: gray;
-        width: 1080px !important; 
-        
     }
 
     /* Força a renderização de cores e fundos */
