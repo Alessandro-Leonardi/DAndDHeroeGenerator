@@ -20,6 +20,46 @@ const RACES: Race[] = [
       bonus: { "Força": 2, "Constituição": 1 },
       speed: 0
   },
+    {
+        name: "Elfo",
+        description: "Seres longevos ligados à magia e à natureza, com sentidos aguçados.",
+        traits: ["Visão no Escuro", "Ancestralidade Feérica", "Transe (4h de descanso)"],
+        gameplayImpact: "Alta mobilidade e resistência a magias de sono e encanto.",
+        bonus: { "Destreza": 2, "Inteligência": 1 },
+        speed: 9
+    },
+    {
+        name: "Anão",
+        description: "Resilientes e fortes, mestres da forja e da pedra com constituição inabalável.",
+        traits: ["Resiliência Anã", "Sentido da Rocha", "Visão no Escuro Superior"],
+        gameplayImpact: "Extremamente duráveis. Ganham mais pontos de vida a cada nível.",
+        bonus: { "Constituição": 2, "Força": 1 },
+        speed: 7.5
+    },
+    {
+        name: "Draconato",
+        description: "Descendentes de dragões que canalizam o poder elemental em seus sopros.",
+        traits: ["Arma de Sopro", "Resistência Elemental", "Linhagem Dracônica"],
+        gameplayImpact: "Poderoso ataque de área e resistência a um tipo específico de dano.",
+        bonus: { "Força": 2, "Carisma": 1 },
+        speed: 9
+    },
+    {
+        name: "Halfling",
+        description: "Pequenos, ágeis e extremamente sortudos, capazes de evitar desastres.",
+        traits: ["Sorte (Rerolar 1)", "Bravura", "Agilidade Halfling"],
+        gameplayImpact: "Consistência incrível em rolagens, raramente falham criticamente.",
+        bonus: { "Destreza": 2, "Carisma": 1 },
+        speed: 7.5
+    },
+    {
+        name: "Tiefling",
+        description: "Marcados por uma linhagem infernal, possuem afinidade natural com magia sombria.",
+        traits: ["Resistência Infernal", "Legado Diabólico (Magias)", "Visão no Escuro"],
+        gameplayImpact: "Ótimos para classes de Carisma, com acesso a truques mágicos natos.",
+        bonus: { "Carisma": 2, "Inteligência": 1 },
+        speed: 9
+    }
   // ... (As outras raças seguiriam este padrão)
 ];
 
