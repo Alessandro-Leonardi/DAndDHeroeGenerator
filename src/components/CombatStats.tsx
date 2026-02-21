@@ -20,7 +20,7 @@ const CombatBox: React.FC<{ title: string; value: string | number; description: 
   </div>
 );
 
-const CombatStats: React.FC<CombatStatsProps> = ({ dndClass, stats, level }) => {
+const CombatStats: React.FC<CombatStatsProps> = ({ dndClass, stats }) => {
   // Memoizamos os cálculos para performance e clareza
   const combatData = useMemo(() => {
     const conMod = calculateModifier(stats['Constituição']);
