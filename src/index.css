@@ -3,11 +3,11 @@
 @media print {
     @page {
         size: A4;
-        margin: 15mm; /**/
+        margin: 10mm; /**/
     }
 
     .print-container {
-        transform: scale(1);
+        transform: scale(0.7);
         transform-origin: top center; /* Escala a partir do topo central */
         /* width: 142.8%;  Compensação matemática: 100% / 0.7 */
         /* margin-left: -21.4%;  Centraliza o conteúdo após o aumento da largura */

@@ -14,7 +14,7 @@ const PrintSheet: React.FC<{ character: Character }> = ({ character }) => {
     return (
         <div className="hidden print:block bg-white text-slate-950 antialiased">
             {/* Wrapper de Escala 90% e Centralização */}
-            <div className="w-[210mm] h-[297mm] mx-auto p-[10mm] origin-top scale-[0.9]">
+            <div className="w-[210mm] h-[297mm] mx-auto p-[10mm] origin-top scale-[1.0]">
                 {/* Cabeçalho Rígido */}
                 <header className="border-b-4 border-slate-900 pb-4 mb-6 flex justify-between items-end">
                     <div>
